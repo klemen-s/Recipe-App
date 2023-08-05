@@ -1,0 +1,42 @@
+<div class="main">
+  <div class="main-part">
+    <h1 id="title">{{ recipeDetail.title }}</h1>
+    <p id="time">
+      {{ recipeDetail.numOfMin }} min<img
+        id="timer"
+        src="../../assets/timer.svg"
+        alt="timer"
+      />
+    </p>
+    <!-- max : 235 letters -->
+    <p id="description">
+      {{ recipeDetail.description }}
+    </p>
+    <p id="creator">Created By : {{ recipeDetail.creator }}</p>
+  </div>
+
+  <div class="img-div">
+    <img
+      id="recipe-image"
+      src="{{ recipeDetail.imageUrl }}"
+      alt="Recipe Picture"
+    />
+  </div>
+  <div id="added-white-bit"></div>
+</div>
+<div class="lower-part">
+  <div class="ingredients">
+    <h1>The ingredients</h1>
+    <ul>
+      <li *ngFor="let ingredient of recipeDetail.ingredients">
+        {{ ingredient }}
+      </li>
+    </ul>
+  </div>
+  <div class="recipe">
+    <h1>The Instructions</h1>
+    <p id="recipe-description">
+      {{ recipeDetail.recipe }}
+    </p>
+  </div>
+</div>

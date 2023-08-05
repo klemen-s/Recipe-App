@@ -1,0 +1,14 @@
+.main {
+  margin: auto;
+  height: 89vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  flex-direction: column;
+}
+
+.home-btn {
+  margin-top: 1rem;
+  background-color: var(--my-green);
+}

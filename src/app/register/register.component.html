@@ -1,0 +1,26 @@
+<div class="main">
+  <form (submit)="submitHandler($event)" id="myForm">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" />
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" />
+
+    <label for="confirmPassword">Confirm Password</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" />
+
+    <button id="submit" class="btn">Register</button>
+  </form>
+  <dialog *ngIf="userSuccess" open class="modal">
+    <p>User Successfully Created!</p>
+    <form method="dialog">
+      <button class="user-btn" (click)="modalHandler()">OK</button>
+    </form>
+  </dialog>
+  <div class="error-msg-register" *ngIf="isError">
+    {{errorMessage}}
+  </div>
+</div>

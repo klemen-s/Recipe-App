@@ -1,0 +1,38 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#myForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: white;
+  width: 400px;
+  height: 300px;
+  border-radius: 40px;
+  margin-top: 3rem;
+}
+
+.main label {
+  margin-top: 20px;
+  margin-left: 39px;
+}
+
+.main input {
+  width: 80%;
+  height: 50px;
+  margin: 0 auto;
+  padding-left: 10px;
+  font-size: 20px;
+  border-radius: 1rem;
+  border: lightslategrey 1px solid;
+}
+
+#submit {
+  margin: 40px auto;
+  width: 40%;
+  background-color: var(--my-green);
+}

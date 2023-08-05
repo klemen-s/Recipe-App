@@ -1,0 +1,54 @@
+<div class="layout">
+  <div *ngIf="recipes.length === 0" class="no-recipes">
+    <p>Loading Recipes...</p>
+  </div>
+  <app-recipe *ngFor="let recipe of recipes" [recipe]="recipe"></app-recipe>
+</div>
+<div class="btn-layout">
+  <div *ngIf="recipes.length !== 0">
+    <button
+      id="firstPage"
+      *ngIf="showFirstPage"
+      [routerLink]="['/recipes']"
+      [queryParams]="{ page: firstPage }"
+      class="btn page-btn"
+    >
+      {{ firstPage }}
+    </button>
+    <button
+      *ngIf="showPreviousPage"
+      [routerLink]="['/recipes']"
+      [queryParams]="{ page: previousPage }"
+      class="btn page-btn"
+      id="previousPage"
+    >
+      {{ previousPage }}
+    </button>
+    <button
+      id="currentPage"
+      [routerLink]="['/recipes']"
+      [queryParams]="{ page: currentPage }"
+      class="active-btn btn"
+    >
+      {{ currentPage }}
+    </button>
+    <button
+      id="nextPage"
+      [routerLink]="['/recipes']"
+      [queryParams]="{ page: nextPage }"
+      *ngIf="showNextPage"
+      class="btn page-btn"
+    >
+      {{ nextPage }}
+    </button>
+    <button
+      id="lastPage"
+      [routerLink]="['/recipes']"
+      [queryParams]="{ page: lastPage }"
+      *ngIf="showLastPage"
+      class="btn page-btn"
+    >
+      {{ lastPage }}
+    </button>
+  </div>
+</div>

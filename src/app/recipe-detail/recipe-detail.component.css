@@ -1,0 +1,136 @@
+.main {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: [start-col] auto [first-col] 700px [sec-col] 400px [third-col] 200px [forth-col] auto;
+  grid-template-rows: [first-row] 80px [sec-row] 160px [third-row] 320px [forth-row] 160px [fifth-row] auto;
+}
+
+#added-white-bit {
+  grid-column-start: third-col;
+  grid-column-end: forth-col;
+  grid-row-start: third-row;
+  grid-row-end: forth-row;
+  background-color: white;
+}
+
+.img-div {
+  grid-row-start: sec-row;
+  grid-row-end: fifth-row;
+  grid-column-start: sec-col;
+  grid-column-end: third-col;
+}
+
+.img-div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.main-part {
+  background-color: white;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  min-height: 15rem;
+  grid-column-start: first-col;
+  grid-column-end: sec-col;
+  grid-row-start: third-row;
+  grid-row-end: forth-row;
+}
+
+.main-part h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+#timer {
+  vertical-align: middle;
+}
+
+#time {
+  color: var(--my-grey);
+  padding-right: 0.6rem;
+  font-size: 1.125rem;
+}
+
+#description {
+  margin-top: 1rem;
+  word-wrap: break-word;
+  width: 80%;
+  min-height: 45%;
+  padding-bottom: 40px;
+}
+
+#creator {
+  margin-bottom: 5px;
+  color: var(--my-grey);
+
+}
+
+.lower-part {
+  margin-bottom: 50px;
+}
+
+.ingredients {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.ingredients ul {
+  margin-left: 50px;
+}
+
+.ingredients h1 {
+  font-weight: 700;
+}
+
+.recipe {
+  width: 60%;
+  margin: auto;
+}
+
+.recipe h1 {
+  font-weight: 700;
+}
+
+#recipe-description {
+  word-wrap: break-word;
+  margin-left: 3px;
+}
+
+/* @media screen and (min-width: 1440px) {
+  .main {
+    display: grid;
+    grid-template-columns: [start-col] 20% [first-col] 40% [sec-col] 20% [third-col] 10% [forth-col] 10%;
+    grid-template-rows: [first-row] 80px [sec-row] 160px [third-row] 285px [forth-row] 125px;
+  }
+
+  #added-white-bit {
+    grid-column-start: third-col;
+    grid-column-end: third-col;
+    grid-row-start: third-row;
+    grid-row-end: third-row;
+    background-color: white;
+  }
+
+  #recipe-image {
+    max-width: 100%;
+    max-height: 100%;
+    grid-row-start: sec-row;
+    grid-row-end: span 3;
+    grid-column-start: sec-col;
+    grid-column-end: third-row;
+  }
+
+  .main-part {
+    background-color: white;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 20px;
+    min-height: 15rem;
+    grid-column-start: first-col;
+    grid-column-end: sec-col;
+    grid-row-start: third-row;
+    grid-row-end: forth-row;
+  }
+} */

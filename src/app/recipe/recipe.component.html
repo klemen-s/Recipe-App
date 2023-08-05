@@ -1,0 +1,10 @@
+<div class="recipe" routerLink="/recipe/{{ recipe._id }}">
+  <img class="food-img" src="{{ recipe.imageUrl }}" alt="food" />
+  <div class="recipe-bottom">
+    <p class="recipe-bottom-left">{{ recipe.title }}</p>
+    <div class="recipe-bottom-right">
+      <span>{{ recipe.numOfMin }}min</span>
+      <img id="timer" src="../../assets/timer.svg" alt="timer" />
+    </div>
+  </div>
+</div>

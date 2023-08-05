@@ -1,1 +1,88 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --my-green: #2cb216;
+  --background-color: #eae8e8;
+  --my-grey: #7e7d7d;
+}
+
+@font-face {
+  font-family: "Mada", sans-serif;
+  src: url("./assets/Mada-VariableFont_wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mada";
+  font-weight: 400;
+}
+
+body,
+html {
+  min-height: 100%;
+  background-color: var(--background-color);
+}
+
+.btn {
+  width: 6.25rem;
+  height: 2.5rem;
+  font-size: 1.4rem;
+  border-radius: 1.5rem;
+  border: none;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.grid-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-msg {
+  position: absolute;
+  right: 20%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  width: 17rem;
+  min-height: 4.5rem;
+  background-color: rgb(247, 66, 66);
+  border-radius: 1rem;
+  border: 3px solid red;
+  color: white;
+}
+
+.success-msg {
+  position: absolute;
+  right: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  width: 17rem;
+  min-height: 4.5rem;
+  background-color: var(--my-green);
+  border-radius: 1rem;
+  border: 3px solid rgb(32, 124, 4);
+  color: white;
+}
+.error-msg-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  width: 17rem;
+  min-height: 4.5rem;
+  background-color: rgb(247, 66, 66);
+  border-radius: 1rem;
+  border: 3px solid red;
+  color: white;
+}
