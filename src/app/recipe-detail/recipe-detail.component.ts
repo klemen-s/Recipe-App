@@ -34,7 +34,7 @@ export class RecipeDetailComponent implements OnInit {
     this.recipeService.getRecipe(this.recipeId).subscribe((recipe: any) => {
       this.recipeDetail = {
         ...recipe.data.getRecipe,
-        imageUrl: 'http://localhost:8080/' + recipe.data.getRecipe.imageUrl,
+        imageUrl: 'http://localhost:8080/images/' + recipe.data.getRecipe.imageUrl,
         creator: recipe.data.getRecipe.creator.name,
       };
 
