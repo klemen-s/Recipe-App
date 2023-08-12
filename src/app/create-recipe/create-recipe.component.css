@@ -36,6 +36,7 @@
   max-width: 80%;
   max-height: 160px;
   margin: 0 auto;
+  padding: 0.3rem 0.4rem;
 }
 
 #description {
@@ -53,3 +54,21 @@
   background-color: var(--my-green);
 }
 
+@media screen and (max-width: 612px) {
+  .main {
+    height: 100vh;
+  }
+
+  .main input {
+    font-size: 15px;
+  }
+
+  #myForm {
+    width: 18rem;
+    margin-bottom: 2rem;
+  }
+
+  #submit {
+    font-size: 1rem;
+  }
+}

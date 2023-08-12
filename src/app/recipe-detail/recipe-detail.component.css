@@ -1,3 +1,5 @@
+
+
 .main {
   margin: 0 auto;
   display: grid;
@@ -58,15 +60,12 @@
   width: 80%;
   min-height: 45%;
   padding-bottom: 40px;
+  white-space: pre-line;
 }
 
 #creator {
   margin-bottom: 5px;
   color: var(--my-grey);
-}
-
-.lower-part {
-  margin-bottom: 50px;
 }
 
 .ingredients {
@@ -84,8 +83,9 @@
 }
 
 .recipe {
+  height: 100%;
   width: 60%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .recipe h1 {
@@ -93,8 +93,11 @@
 }
 
 #recipe-description {
+  height: 100%;
   word-wrap: break-word;
   margin-left: 3px;
+  margin-bottom: 50px;
+  white-space: pre-line;
 }
 
 @media screen and (max-width: 612px) {
@@ -125,7 +128,7 @@
 
   #description {
     margin: 0 auto;
-    margin-top : 0.7rem;
+    margin-top: 0.7rem;
     width: 90%;
     padding-bottom: 20px;
   }
@@ -141,7 +144,6 @@
   .ingredients h1 {
     font-size: 2rem;
     font-weight: 600;
-    
   }
 
   .ingredients ul {
