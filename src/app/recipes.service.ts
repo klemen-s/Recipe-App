@@ -10,7 +10,8 @@ import { Observable, catchError, throwError } from 'rxjs';
   providedIn: 'root',
 })
 export class RecipesService {
-  url = 'http://localhost:8080/graphql';
+  // url = 'https://recipe-app-express-89dbd6a6c51a.herokuapp.com/graphql';
+  url = 'https://recipe-app-express-89dbd6a6c51a.herokuapp.com/graphql';
 
   constructor(private http: HttpClient) {}
 
@@ -115,7 +116,10 @@ export class RecipesService {
   }
   postImage(data: any): Observable<any> {
     return this.http
-      .post('http://localhost:8080/post-image', data)
+      .post(
+        'https://recipe-app-express-89dbd6a6c51a.herokuapp.com/post-image',
+        data
+      )
       .pipe(catchError(this.errorHandler));
   }
 }

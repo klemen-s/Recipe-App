@@ -57,7 +57,9 @@ export class RecipeGridComponent implements OnInit {
       this.recipes = this.recipes.map((recipe) => {
         return {
           ...recipe,
-          imageUrl: 'http://localhost:8080/images/' + recipe.imageUrl,
+          imageUrl:
+            'https://recipe-app-express-89dbd6a6c51a.herokuapp.com/images/' +
+            recipe.imageUrl,
         };
       });
     });

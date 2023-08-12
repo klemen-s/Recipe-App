@@ -18,7 +18,7 @@ import { Router } from '@angular/router';
   providedIn: 'root',
 })
 export class UserService implements HttpInterceptor {
-  url = 'http://localhost:8080/graphql';
+  url = 'https://recipe-app-express-89dbd6a6c51a.herokuapp.com/graphql';
 
   constructor(
     private http: HttpClient,

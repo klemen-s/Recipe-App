@@ -1,7 +1,9 @@
 <div id="navbar">
   <button (click)="homeHandler()" class="logo-btn">MealPlanned</button>
   <div id="right-side">
-    <button routerLink="/create-recipe" class="create-recipe-btn">Create Recipe</button>
+    <button routerLink="/create-recipe" class="create-recipe-btn">
+      Create Recipe
+    </button>
     <div class="user-btn" *ngIf="!isLoggedIn">
       <button id="login" routerLink="/login" class="btn">Login</button>
       <button id="register" routerLink="/register" class="btn">Register</button>

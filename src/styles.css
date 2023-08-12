@@ -86,3 +86,18 @@ html {
   border: 3px solid red;
   color: white;
 }
+
+@media screen and (max-width: 612px) {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Mada";
+    font-weight: 400;
+  }
+
+  body,
+  html {
+    background-color: var(--background-color);
+    box-sizing: border-box;
+  }
+}

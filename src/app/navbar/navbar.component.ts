@@ -1,8 +1,5 @@
 import {
   Component,
-  ChangeDetectorRef,
-  OnChanges,
-  SimpleChanges,
 } from '@angular/core';
 import { GlobalServiceService } from '../global-service.service';
 import { Router } from '@angular/router';
