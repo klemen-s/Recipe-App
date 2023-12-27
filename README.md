@@ -7,7 +7,7 @@ This repository contains the front-end code for a Recipe App built with Angular,
 * Sharing Recipes: Share your recipes with others.
 * Browse Recipes: Explore a collection of recipes shared by other users.
 
-##Technologies Used
+## Technologies Used
 * Angular
 * TypeScript
 * GraphQL
@@ -15,8 +15,8 @@ This repository contains the front-end code for a Recipe App built with Angular,
 ## Installation
 To run this project locally, follow these steps:
 
-1.Clone the repository: git clone https://github.com/your-username/recipe-app-frontend.git
-2.Navigate to the project directory: cd recipe-app-frontend
-3.Install dependencies: npm install
-4.Start the development server: ng serve
-5.Access the app at http://localhost:4200 in your web browser.
+1. Clone the repository: `git clone https://github.com/your-username/recipe-app-frontend.git`
+2. Navigate to the project directory: `cd recipe-app-frontend`
+3. Install dependencies: `npm install`
+4. Start the development server: `ng serve`
+5. Access the app at http://localhost:4200 in your web browser.
