@@ -1,16 +1,16 @@
-## Recipe App Front-End
+## 🍔 Recipe App Front-End
 This repository contains the front-end code for a Recipe App built with Angular, TypeScript, and GraphQL.
 
-## Features
-* User Authentication: Sign up and log in to access your account.
-* Recipe Management: Create and edit your own recipes.
-* Sharing Recipes: Share your recipes with others.
-* Browse Recipes: Explore a collection of recipes shared by other users.
+## 🚀 Features
+* **User Authentication**: Sign up and log in to access your account.
+* **Recipe Management**: Create and edit your own recipes.
+* **Sharing Recipes**: Share your recipes with others.
+* **Browse Recipes**: Explore a collection of recipes shared by other users.
 
-## Technologies Used
-* Angular
-* TypeScript
-* GraphQL
+## 🔧 Technologies Used
+* **Angular**
+* **TypeScript**
+* **GraphQL**
 
 ## Installation
 To run this project locally, follow these steps:
