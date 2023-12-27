@@ -1,4 +1,4 @@
-## 🍔 Recipe App Front-End
+## 🍔 Recipe App
 This repository contains the front-end code for a Recipe App built with Angular, TypeScript, and GraphQL.
 
 ## 🚀 Features
@@ -8,9 +8,9 @@ This repository contains the front-end code for a Recipe App built with Angular,
 * **Browse Recipes**: Explore a collection of recipes shared by other users.
 
 ## 🔧 Technologies Used
-* **Angular**
-* **TypeScript**
-* **GraphQL**
+![Angular Badge](https://img.shields.io/badge/Angular-a6120d?logo=angular&logoColor=00&style=for-the-badge)
+![TypeScript Badge](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=for-the-badge)
+![GraphQL Badge](https://img.shields.io/badge/GraphQL-E10098?logo=graphql&logoColor=fff&style=for-the-badge)
 
 ## Installation
 To run this project locally, follow these steps:
@@ -20,3 +20,6 @@ To run this project locally, follow these steps:
 3. Install dependencies: `npm install`
 4. Start the development server: `ng serve`
 5. Access the app at `http://localhost:4200` in your web browser.
+
+## Other repositories
+### [Recipe App Backend](https://github.com/klemen-s/Recipe-App-BE.git)
