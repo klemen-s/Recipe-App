@@ -3,7 +3,7 @@ This repository contains the front-end code for a Recipe App built with Angular,
 
 ## Features
 * User Authentication: Sign up and log in to access your account.
-* Recipe Management: Create, edit, and delete your own recipes.
+* Recipe Management: Create and edit your own recipes.
 * Sharing Recipes: Share your recipes with others.
 * Browse Recipes: Explore a collection of recipes shared by other users.
 
